@@ -1,0 +1,14 @@
+{
+    "name": "demo-connector",
+    "config": {
+        "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+        "tasks.max": "1",
+        "database.hostname": "postgres",
+        "database.port": "5432",
+        "database.user": "docker",
+        "database.password": "docker",
+        "database.dbname" : "postgres",
+        "database.server.name": "postgres",
+        "table.include.list": "public.users,public.orders"
+    }
+}
