@@ -2,8 +2,10 @@
 
 
 # Start Docker containers from the default .yaml file
-`docker-compose up `
-`docker-compose -f docker-compose-ui.yaml up`
+`
+docker-compose up
+docker-compose -f docker-compose-ui.yaml up
+`
 
 # Start Postgres connector
 `
