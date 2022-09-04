@@ -2,11 +2,13 @@
 
 
 # Start Docker containers from the default .yaml file
-docker-compose up 
-docker-compose -f docker-compose-ui.yaml up
+`docker-compose up `
+`docker-compose -f docker-compose-ui.yaml up`
 
 # Start Postgres connector
+`
 curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @pgsqlconnector.json 
+`
 
 
 # Consume messages from a Debezium topic
